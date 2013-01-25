@@ -1,0 +1,489 @@
+object Form2: TForm2
+  Left = 0
+  Top = 371
+  Align = alBottom
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'smKeyBoard'
+  ClientHeight = 225
+  ClientWidth = 951
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poDesigned
+  OnCreate = FormCreate
+  PixelsPerInch = 120
+  TextHeight = 17
+  object SpeedButton11: TSpeedButton
+    Left = 10
+    Top = 69
+    Width = 53
+    Height = 53
+    Caption = 'a'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton12: TSpeedButton
+    Left = 63
+    Top = 69
+    Width = 52
+    Height = 53
+    Caption = 's'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton13: TSpeedButton
+    Left = 115
+    Top = 69
+    Width = 52
+    Height = 53
+    Caption = 'd'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton14: TSpeedButton
+    Left = 167
+    Top = 69
+    Width = 53
+    Height = 53
+    Caption = 'f'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton37: TSpeedButton
+    Left = 10
+    Top = 8
+    Width = 53
+    Height = 52
+    Caption = '1'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton38: TSpeedButton
+    Left = 63
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '2'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton39: TSpeedButton
+    Left = 115
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '3'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton50: TSpeedButton
+    Left = 385
+    Top = 125
+    Width = 52
+    Height = 52
+    Caption = #39
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton51: TSpeedButton
+    Left = 795
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '-'
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton52: TSpeedButton
+    Left = 737
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '='
+    OnClick = SpeedButton37Click
+  end
+  object btnBackSpace: TSpeedButton
+    Tag = 8
+    Left = 677
+    Top = 125
+    Width = 170
+    Height = 52
+    Caption = 'Back Space'
+    OnClick = btnBackSpaceClick
+  end
+  object SpeedButton57: TSpeedButton
+    Left = 619
+    Top = 67
+    Width = 52
+    Height = 52
+    Caption = '\'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton58: TSpeedButton
+    Left = 503
+    Top = 67
+    Width = 52
+    Height = 52
+    Caption = #180
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton58Click
+  end
+  object SpeedButton60: TSpeedButton
+    Left = 220
+    Top = 69
+    Width = 51
+    Height = 53
+    Caption = #231
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton61: TSpeedButton
+    Left = 677
+    Top = 65
+    Width = 52
+    Height = 53
+    Caption = '~'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton61Click
+  end
+  object SpeedButton63: TSpeedButton
+    Left = 445
+    Top = 67
+    Width = 52
+    Height = 52
+    Caption = ','
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton64: TSpeedButton
+    Left = 501
+    Top = 125
+    Width = 52
+    Height = 52
+    Caption = '.'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton65: TSpeedButton
+    Left = 735
+    Top = 66
+    Width = 52
+    Height = 53
+    Caption = ';'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton37Click
+  end
+  object SpeedButton66: TSpeedButton
+    Left = 561
+    Top = 125
+    Width = 52
+    Height = 53
+    Caption = '/'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton66Click
+  end
+  object btnReturn: TSpeedButton
+    Tag = 13
+    Left = 851
+    Top = 8
+    Width = 85
+    Height = 170
+    Caption = 'Enter'
+    OnClick = btnReturnClick
+  end
+  object btnSpace: TSpeedButton
+    Left = 8
+    Top = 128
+    Width = 371
+    Height = 48
+    Caption = ' '
+    OnClick = btnSpaceClick
+  end
+  object btnCaps: TSpeedButton
+    Tag = 20
+    Left = 277
+    Top = 70
+    Width = 102
+    Height = 52
+    Caption = 'Caps Lock'
+    OnClick = btnCapsClick
+  end
+  object btnShift: TSpeedButton
+    Tag = 16
+    Left = 173
+    Top = 8
+    Width = 102
+    Height = 48
+    Caption = 'S h i f t'
+    OnClick = btnShiftClick
+  end
+  object SpeedButton20: TSpeedButton
+    Left = 387
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '$'
+    OnClick = SpeedButton20Click
+  end
+  object imgLed: TImage
+    Left = 311
+    Top = 8
+    Width = 25
+    Height = 25
+    Picture.Data = {
+      07544269746D6170AA030000424DAA0300000000000036000000280000001100
+      000011000000010018000000000074030000120B0000120B0000000000000000
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7E7E7A5A5A56363634C4C4C606060
+      A1A1A1E3E3E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6FFFFFFFFFFFFFFFFFFFD8
+      D8D85050500A0A0A0202020101010101010101010202020F0F0F5B5B5BD5D5D5
+      FFFFFFFFFFFFFFFFFF6FFFFFFFFFFFFFB0B0B011111102020201010100000000
+      0000000000000000000000010101030303181818BDBDBDFFFFFFFFFFFF6FFFFF
+      FFC7C7C7252525020202000000000000000200000700000B0000070000020000
+      0000000000020202292929D4D4D4FFFFFF6FFFFFFF4747470404040000000001
+      00000C00004B00006600006600006300004600000A000000000000000404045A
+      5A5AFFFFFF6FD9D9D90A0A0A010101000000001600005A000066000066000066
+      00006600006600005500000F00000000010101131313E7E7E76F939393020202
+      000000000200004B000066000066000066000066000066000066000066000042
+      00000100000000030303AAAAAA6F454545000000000000000700006400006600
+      0066000066000066000066000066000066000061000006000000000101016D6D
+      6D6F383838000000000000000B00006600006600006600006600006600006600
+      006600006600006600000A000000000101015151516F47474701010100000000
+      0600006500006600006600006600006600006600006600006600006600000700
+      0000000101016464646F8F8F8F010101000000000100004C0000660000660000
+      6600006600006600006600006600004D000001000000000101019E9E9E6FD5D5
+      D5070707010101000000001500005A0000660000660000660000660000660000
+      5C00000D00000000010101090909E5E5E56FFFFFFF3E3E3E0202020000000001
+      00001400004E00006600006600006300004A0000150000010000000002020250
+      5050FFFFFF6FFFFFFFC6C6C61E1E1E020202000000000000000200000800000E
+      00000900000200000000000000020202101010D0D0D0FFFFFF6FFFFFFFFFFFFF
+      A9A9A91616160202020000000000000000000000000000000000000101010303
+      03202020B1B1B1FEFEFEFFFFFF6FFFFFFFFFFFFFFFFFFFC3C3C33D3D3D080808
+      0202020101010101010101010202020D0D0D434343C2C2C2FFFFFFFFFFFFFFFF
+      FF6FFFFFFFFFFFFFFFFFFFFFFFFFFCFCFCD5D5D58B8B8B5252523D3D3D505050
+      898989D5D5D5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F}
+  end
+  object SpeedButton21: TSpeedButton
+    Left = 445
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '@'
+    OnClick = SpeedButton21Click
+  end
+  object SpeedButton29: TSpeedButton
+    Left = 793
+    Top = 66
+    Width = 52
+    Height = 53
+    Caption = '?'
+    OnClick = SpeedButton29Click
+  end
+  object imgShift: TImage
+    Left = 311
+    Top = 39
+    Width = 26
+    Height = 26
+    Picture.Data = {
+      07544269746D6170AA030000424DAA0300000000000036000000280000001100
+      000011000000010018000000000074030000120B0000120B0000000000000000
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7E7E7A5A5A56363634C4C4C606060
+      A1A1A1E3E3E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6FFFFFFFFFFFFFFFFFFFD8
+      D8D85050500A0A0A0202020101010101010101010202020F0F0F5B5B5BD5D5D5
+      FFFFFFFFFFFFFFFFFF6FFFFFFFFFFFFFB0B0B011111102020201010100000000
+      0000000000000000000000010101030303181818BDBDBDFFFFFFFFFFFF6FFFFF
+      FFC7C7C7252525020202000000000000000200000700000B0000070000020000
+      0000000000020202292929D4D4D4FFFFFF6FFFFFFF4747470404040000000001
+      00000C00004B00006600006600006300004600000A000000000000000404045A
+      5A5AFFFFFF6FD9D9D90A0A0A010101000000001600005A000066000066000066
+      00006600006600005500000F00000000010101131313E7E7E76F939393020202
+      000000000200004B000066000066000066000066000066000066000066000042
+      00000100000000030303AAAAAA6F454545000000000000000700006400006600
+      0066000066000066000066000066000066000061000006000000000101016D6D
+      6D6F383838000000000000000B00006600006600006600006600006600006600
+      006600006600006600000A000000000101015151516F47474701010100000000
+      0600006500006600006600006600006600006600006600006600006600000700
+      0000000101016464646F8F8F8F010101000000000100004C0000660000660000
+      6600006600006600006600006600004D000001000000000101019E9E9E6FD5D5
+      D5070707010101000000001500005A0000660000660000660000660000660000
+      5C00000D00000000010101090909E5E5E56FFFFFFF3E3E3E0202020000000001
+      00001400004E00006600006600006300004A0000150000010000000002020250
+      5050FFFFFF6FFFFFFFC6C6C61E1E1E020202000000000000000200000800000E
+      00000900000200000000000000020202101010D0D0D0FFFFFF6FFFFFFFFFFFFF
+      A9A9A91616160202020000000000000000000000000000000000000101010303
+      03202020B1B1B1FEFEFEFFFFFF6FFFFFFFFFFFFFFFFFFFC3C3C33D3D3D080808
+      0202020101010101010101010202020D0D0D434343C2C2C2FFFFFFFFFFFFFFFF
+      FF6FFFFFFFFFFFFFFFFFFFFFFFFFFCFCFCD5D5D58B8B8B5252523D3D3D505050
+      898989D5D5D5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F}
+  end
+  object SpeedButton30: TSpeedButton
+    Left = 619
+    Top = 125
+    Width = 52
+    Height = 52
+    Caption = '"'
+    OnClick = SpeedButton30Click
+  end
+  object SpeedButton31: TSpeedButton
+    Left = 385
+    Top = 66
+    Width = 52
+    Height = 52
+    Caption = '^'
+    OnClick = SpeedButton31Click
+  end
+  object SpeedButton32: TSpeedButton
+    Left = 443
+    Top = 125
+    Width = 52
+    Height = 52
+    Caption = '`'
+    OnClick = SpeedButton32Click
+  end
+  object SpeedButton33: TSpeedButton
+    Left = 562
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '#'
+    OnClick = SpeedButton33Click
+  end
+  object SpeedButton34: TSpeedButton
+    Left = 678
+    Top = 8
+    Width = 53
+    Height = 52
+    Caption = '+'
+    OnClick = SpeedButton34Click
+  end
+  object SpeedButton35: TSpeedButton
+    Left = 620
+    Top = 8
+    Width = 52
+    Height = 52
+    Caption = '_'
+    OnClick = SpeedButton35Click
+  end
+  object SpeedButton36: TSpeedButton
+    Left = 503
+    Top = 8
+    Width = 53
+    Height = 52
+    Caption = '%'
+    OnClick = SpeedButton36Click
+  end
+  object SpeedButton47: TSpeedButton
+    Left = 561
+    Top = 67
+    Width = 52
+    Height = 52
+    Caption = ':'
+    OnClick = SpeedButton47Click
+  end
+  object SpeedButton48: TSpeedButton
+    Left = 376
+    Top = 183
+    Width = 560
+    Height = 36
+    Caption = 'Fechar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = SpeedButton48Click
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 195
+    Width = 341
+    Height = 24
+    Caption = 'Dicas Delphi - Teclado (Prot'#243'tipo)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

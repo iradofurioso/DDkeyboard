@@ -1,0 +1,922 @@
+{
+Codigos das teclas para referencia.
+
+Teclas http://www.delphipages.com/threads/thread.cfm?ID=167269&G=167246
+
+Lower case
+
+key	scan code
+
+a   65
+b		66
+c		67
+d		68
+e		69
+f		70
+g		71
+h		72
+i		73
+j		74
+k		75
+l		76
+m		77
+n		78
+o		79
+p		80
+q		81
+r		82
+s		83
+t		84
+u		85
+v		86
+w		87
+x		88
+y		89
+z		90
+
+Upper case
+
+Upper case values are the same 
+as lower case, Shift state is different.
+
+
+key	scan code
+
+A		65 Shift
+B		66 Shift
+C		67 Shift
+D		68 Shift
+E		69 Shift
+F		70 Shift
+G		71 Shift
+H		72 Shift
+I		73 Shift
+J		74 Shift
+K		75 Shift
+L		76 Shift
+M		77 Shift
+N		78 Shift
+O		79 Shift
+P		80 Shift
+Q		81 Shift
+R		82 Shift
+S		83 Shift
+T		84 Shift
+U		85 Shift
+V		86 Shift
+W		87 Shift
+X		88 Shift
+Y		89 Shift
+Z		90 Shift
+
+Digits on Keyboard
+
+key	scan code
+
+0	48
+1	49
+2	50
+3	51
+4	52
+5	53
+6	54
+7	55
+8	56
+9	57
+
+Keyboard scan codes for digits
+on the keyboard are different from the
+scan codes for digits on the number pad.
+However they are the same as the
+ASCII Character Code decimal value.
+
+
+Shift Digits         see punctuation
+
+key	scan code
+
+)	48 Shift
+!	49 Shift
+@	50 Shift
+#	51 Shift
+$	52 Shift
+%	53 Shift
+^	54 Shift
+&	55 Shift
+* 	56 Shift
+(	57 Shift
+
+Digits on Number Pad - Num Lock on
+
+key	scan code
+
+0 	96
+1	97
+2	98
+3	99
+4	100
+5	101
+6	102
+7	103
+8	104
+9	105
+
+Keyboard scan codes for digits
+on the number pad are different from the
+scan codes for digits on the keyboard
+
+Pressing the shift key with the number lock on
+turns off the num lock while the shift key is held
+down, so pressing shift + 1 on the number
+pad w/ NumLock on is the same as "End" below.
+
+Keys on Num Pad - Num Lock off
+
+key	scan code
+
+5 	12
+PgUp	33
+PgDn	34
+End	35
+Home	36
+Left Arrow	37
+Up Arrow	38
+Right Arrow	39
+Down Arrow	40
+Ins	45
+Del	46
+
+Punctuation
+key	scan code
+
+)	48 Shift
+!	49 Shift
+@	50 Shift
+#	51 Shift
+$	52 Shift
+%	53 Shift
+^	54 Shift
+&	55 Shift
+* 	56 Shift
+(	57 Shift
+* on Num Pad	106
++ on Num Pad	107
+- on Num Pad	109
+. on Num Pad	110
+/ on Num Pad	111
+[ 	219
+(CHAVES DO COMENTARIO DO DELPHI - A QUE ABRE) 	219 Shift
+] 	221
+(CHAVES DO COMENTARIO DO DELPHI - AQUE FECHA)	221 Shift
+| Pipe	220 Shift
+\ 	220
+; 	186
+: 	186 Shift
+= 	187
++ on Keyboard	187 Shift
+, 	188
+< 	188 Shift
+- 	189
+_ Underscore	189 Shift
+. on Keyboard	190
+> 	190 Shift
+/ on Keyboard	191
+? 	191 Shift
+
+` Reverse Quote	192
+~ 	192 Shift
+\ 	220
+' Single Quote	222
+" 	222 Shift
+
+Non Printable Characters
+Backspace	8
+Tab	9
+5 on Num Pad w/ Num Lock off	12
+Enter (carriage return)	13
+Shift only	16
+Ctrl only	17
+Alt only	18
+Pause / Break 	19
+Caps Lock	20
+Escape	27
+Space Bar	32
+Page Up	33
+Page Down	34
+End	35
+Home	36
+Left Arrow	37
+Up Arrow	38
+Right Arrow	39
+Down Arrow	40
+Print Scrn 	44
+Insert	45
+Delete	46
+Start Menu But	92
+Popup Menu Key	93
+Num Lock 	144
+Scroll Lock 	145
+
+Function Keys
+key	scan code
+
+F1		112
+F2		113
+F3		114
+F4		115
+F5		116
+F6		117
+F7		118
+F8		119
+F9		120
+F10		121
+F11		122
+F12		123
+
+}
+unit uni_DDTecladoVirtual;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, ExtCtrls, StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    SpeedButton8: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    SpeedButton10: TSpeedButton;
+    SpeedButton11: TSpeedButton;
+    SpeedButton12: TSpeedButton;
+    SpeedButton13: TSpeedButton;
+    SpeedButton14: TSpeedButton;
+    SpeedButton15: TSpeedButton;
+    SpeedButton16: TSpeedButton;
+    SpeedButton17: TSpeedButton;
+    SpeedButton18: TSpeedButton;
+    SpeedButton19: TSpeedButton;
+    SpeedButton22: TSpeedButton;
+    SpeedButton23: TSpeedButton;
+    SpeedButton24: TSpeedButton;
+    SpeedButton25: TSpeedButton;
+    SpeedButton26: TSpeedButton;
+    SpeedButton27: TSpeedButton;
+    SpeedButton28: TSpeedButton;
+    SpeedButton37: TSpeedButton;
+    SpeedButton38: TSpeedButton;
+    SpeedButton39: TSpeedButton;
+    SpeedButton40: TSpeedButton;
+    SpeedButton41: TSpeedButton;
+    SpeedButton42: TSpeedButton;
+    SpeedButton43: TSpeedButton;
+    SpeedButton44: TSpeedButton;
+    SpeedButton45: TSpeedButton;
+    SpeedButton46: TSpeedButton;
+    SpeedButton50: TSpeedButton;
+    SpeedButton51: TSpeedButton;
+    SpeedButton52: TSpeedButton;
+    btnBackSpace: TSpeedButton;
+    SpeedButton57: TSpeedButton;
+    SpeedButton58: TSpeedButton;
+    SpeedButton60: TSpeedButton;
+    SpeedButton61: TSpeedButton;
+    SpeedButton63: TSpeedButton;
+    SpeedButton64: TSpeedButton;
+    SpeedButton65: TSpeedButton;
+    SpeedButton66: TSpeedButton;
+    btnReturn: TSpeedButton;
+    btnSpace: TSpeedButton;
+    btnCaps: TSpeedButton;
+    btnShift: TSpeedButton;
+    SpeedButton20: TSpeedButton;
+    imgLed: TImage;
+    SpeedButton21: TSpeedButton;
+    SpeedButton29: TSpeedButton;
+    imgShift: TImage;
+    SpeedButton30: TSpeedButton;
+    SpeedButton31: TSpeedButton;
+    SpeedButton32: TSpeedButton;
+    SpeedButton33: TSpeedButton;
+    SpeedButton34: TSpeedButton;
+    SpeedButton35: TSpeedButton;
+    SpeedButton36: TSpeedButton;
+    SpeedButton47: TSpeedButton;
+    SpeedButton48: TSpeedButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure SpeedButton37Click(Sender: TObject);
+    procedure btnSpaceClick(Sender: TObject);
+    procedure btnBackSpaceClick(Sender: TObject);
+    procedure SpeedButton20Click(Sender: TObject);
+    procedure btnCapsClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnShiftClick(Sender: TObject);
+    procedure SpeedButton21Click(Sender: TObject);
+    procedure SpeedButton29Click(Sender: TObject);
+    procedure btnReturnClick(Sender: TObject);
+    procedure SpeedButton61Click(Sender: TObject);
+    procedure SpeedButton66Click(Sender: TObject);
+    procedure SpeedButton58Click(Sender: TObject);
+    procedure SpeedButton30Click(Sender: TObject);
+    procedure SpeedButton31Click(Sender: TObject);
+    procedure SpeedButton32Click(Sender: TObject);
+    procedure SpeedButton33Click(Sender: TObject);
+    procedure SpeedButton34Click(Sender: TObject);
+    procedure SpeedButton35Click(Sender: TObject);
+    procedure SpeedButton36Click(Sender: TObject);
+    procedure SpeedButton47Click(Sender: TObject);
+    procedure SpeedButton48Click(Sender: TObject);
+    procedure Label2Click(Sender: TObject);
+  private
+    { Private declarations }
+
+    //variaveis
+    MyHandle          : THandle;
+    HandleMaeFocus    : THandle;
+    HandleFilhaFocus  : THandle;
+    altState          : boolean;
+    shiftState        : boolean;
+    vsPath            : string;
+    
+    //metodos
+    procedure processLetter(letra: char);
+    procedure trataJanelas;
+    procedure processSpecialKeys(scanCode: Integer);
+    procedure SetCapsLock(State: boolean);
+
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+
+{Construtor do teclado}
+//============================================================================//
+procedure TForm2.FormCreate(Sender: TObject);
+//============================================================================//
+begin
+  //Estado inicial da tecla alt.
+  altState := false;
+
+  //Estado inicial do shift
+  shiftState := false;
+  
+  vsPath := ExtractFilePath( Application.ExeName );
+end;
+
+
+procedure TForm2.Label2Click(Sender: TObject);
+begin
+
+end;
+
+{Faz o simbolo do dolar}
+//============================================================================//
+procedure TForm2.SpeedButton20Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+  
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+  
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(52, 0, 0, 0);
+  keybd_event(52, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Faz o simbolo do arroba}
+//============================================================================//
+procedure TForm2.SpeedButton21Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(50, 0, 0, 0);
+  keybd_event(50, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Faz o simbolo de interrogacao}
+//============================================================================//
+procedure TForm2.SpeedButton29Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(193, 0, 0, 0);
+  keybd_event(193, 0, KEYEVENTF_KEYUP, 0);
+  
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca as aspas}
+//============================================================================//
+procedure TForm2.SpeedButton30Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(192, 0, 0, 0);
+  keybd_event(192, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca o acento circunflexo}
+//============================================================================//
+procedure TForm2.SpeedButton31Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(222, 0, 0, 0);
+  keybd_event(222, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{coloca Crase}
+//============================================================================//
+procedure TForm2.SpeedButton32Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(219, 0, 0, 0);
+  keybd_event(219, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca o jogo da velha}
+//============================================================================//
+procedure TForm2.SpeedButton33Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(51, 0, 0, 0);
+  keybd_event(51, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca o sinal de adição}
+//============================================================================//
+procedure TForm2.SpeedButton34Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(187, 0, 0, 0);
+  keybd_event(187, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca o underline}
+//============================================================================//
+procedure TForm2.SpeedButton35Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(189, 0, 0, 0);
+  keybd_event(189, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Coloca o sinal de porcentagem}
+//============================================================================//
+procedure TForm2.SpeedButton36Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(53, 0, 0, 0);
+  keybd_event(53, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{metodo geral processa todas as letras e numeros}
+//============================================================================//
+procedure TForm2.SpeedButton37Click(Sender: TObject);
+//============================================================================//
+var
+  btnValue  : string;
+  valueChar : char;
+begin
+  btnValue := TSpeedButton(Sender).Caption;
+  valueChar := btnValue[1];
+  processLetter(valueChar);
+end;
+
+
+{Coloca os dois pontos}
+//============================================================================//
+procedure TForm2.SpeedButton47Click(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+
+  //Segura o Shift
+  keybd_event(VK_SHIFT, 0, 0, 0);
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(191, 0, 0, 0);
+  keybd_event(191, 0, KEYEVENTF_KEYUP, 0);
+
+  //Solta o shift
+  keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Termina o teclado}
+//============================================================================//
+procedure TForm2.SpeedButton48Click(Sender: TObject);
+//============================================================================//
+begin
+  self.Close;
+end;
+
+
+{coloca o acento agudo}
+//============================================================================//
+procedure TForm2.SpeedButton58Click(Sender: TObject);
+//============================================================================//
+begin
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(219, 0, 0, 0);
+  keybd_event(219, 0, KEYEVENTF_KEYUP, 0);
+end;
+
+
+{Coloca o acento til}
+//============================================================================//
+procedure TForm2.SpeedButton61Click(Sender: TObject);
+//============================================================================//
+begin
+  //Trata o foco das janelas.
+  trataJanelas;
+
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(222, 0, 0, 0);
+  keybd_event(222, 0, KEYEVENTF_KEYUP, 0);
+end;
+
+
+{Contra barra}
+//============================================================================//
+procedure TForm2.SpeedButton66Click(Sender: TObject);
+//============================================================================//
+begin
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(193, 0, 0, 0);
+  keybd_event(193, 0, KEYEVENTF_KEYUP, 0);
+end;
+
+
+{Trata o foco das janelas envovidas...}
+//============================================================================//
+procedure TForm2.trataJanelas;
+//============================================================================//
+begin
+
+  //Interrompe a aplicacao para que o windows possa processar as mensagens.
+  Application.HandleMessage;
+
+  //Handle da janela do teclado
+  MyHandle := FindWindow('TForm2',nil);
+
+
+  if GetActiveWindow = MyHandle then
+    HandleMaeFocus := GetNextWindow(MyHandle,GW_HWNDNEXT);
+
+  
+  Sendmessage(HandleFilhaFocus,WM_SETFOCUS,0,0);
+  SetActiveWindow(HandleFilhaFocus);
+
+end;
+
+
+{backspace}
+//============================================================================//
+procedure TForm2.btnBackSpaceClick(Sender: TObject);
+//============================================================================//
+begin
+  //Backspace	8
+  processSpecialKeys(8);
+end;
+
+
+{capslock}
+//============================================================================//
+procedure TForm2.btnCapsClick(Sender: TObject);
+//============================================================================//
+begin
+  if altState = true then
+  begin
+    SetCapsLock(false);
+    altState := false;
+    imgLed.Picture.LoadFromFile(vsPath + '\images\ledoff.bmp');
+  end
+  else
+  begin
+    SetCapsLock(true);
+    altState := true;
+    imgLed.Picture.LoadFromFile(vsPath + '\images\ledon.bmp');
+  end;
+
+end;
+
+
+{Faz o enter}
+//============================================================================//
+procedure TForm2.btnReturnClick(Sender: TObject);
+//============================================================================//
+begin
+
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(VK_RETURN, 0, 0, 0);
+  keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Botão shift}
+//============================================================================//
+procedure TForm2.btnShiftClick(Sender: TObject);
+//============================================================================//
+begin
+  if shiftState = true then
+  begin
+    if altState = true then begin
+      SetCapsLock(false);
+      imgLed.Picture.LoadFromFile(vsPath + '\images\ledoff.bmp');
+      altState := false;
+    end;
+    
+    shiftState := false;
+    imgShift.Picture.LoadFromFile(vsPath + '\images\ledoff.bmp');
+  end
+  else
+  begin
+    if altState = true then begin
+      SetCapsLock(false);
+      imgLed.Picture.LoadFromFile(vsPath + '\images\ledoff.bmp');
+      altState := false;
+    end;
+    
+    shiftState := true;
+    imgShift.Picture.LoadFromFile(vsPath + '\images\ledon.bmp');
+  end;
+
+end;
+
+
+{Processa o espaço}
+//============================================================================//
+procedure TForm2.btnSpaceClick(Sender: TObject);
+//============================================================================//
+begin
+  //Space Bar	32
+  processSpecialKeys(32);
+end;
+
+
+{Evia a letra informada para aplicação em questão}
+//============================================================================//
+procedure TForm2.processLetter(letra: char);
+//============================================================================//
+var
+  layoutKeyboard : HKL;
+  Key            : integer;
+begin
+  
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Segura o Shift
+  if shiftState = true then
+    keybd_event(VK_SHIFT, 0, 0, 0);    
+
+
+  layoutKeyboard := GetKeyboardLayout(0);
+
+  Key := VkKeyScanEx(letra,layoutKeyboard);
+
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+  
+  keybd_event(LoByte(Key), 0, 0, 0);
+  keybd_event(LoByte(Key), 0, KEYEVENTF_KEYUP, 0);
+
+    
+  //Solta o shift
+  if shiftState = true then begin
+    keybd_event(VK_SHIFT, 0, KEYEVENTF_KEYUP, 0);
+    shiftState := false;
+    imgShift.Picture.LoadFromFile(vsPath + '\images\ledoff.bmp');
+  end;
+
+
+end;
+
+{Processa os caracters especiaisdo teclado}
+//============================================================================//
+procedure TForm2.processSpecialKeys(scanCode: Integer);
+//============================================================================//
+begin
+  
+  //Trata o foco das janelas.
+  trataJanelas;
+  
+  //Caso seja um edit prepara o cursor
+  keybd_event(39, 0, 0, 0);
+  keybd_event(39, 0, KEYEVENTF_KEYUP, 0);
+  
+  //Processa o valor da tecla baseado no scanCode.
+  keybd_event(scanCode, 0, 0, 0);
+  keybd_event(scanCode, 0, KEYEVENTF_KEYUP, 0);
+
+end;
+
+
+{Liga e Desliga o capslock}
+//============================================================================//
+procedure TForm2.SetCapsLock(State: boolean);
+//============================================================================//
+begin
+  if (State and ((GetKeyState(VK_CAPITAL) and 1) = 0)) or
+     ((not State) and ((GetKeyState(VK_CAPITAL) and 1) = 1)) then
+  begin
+    keybd_event(VK_CAPITAL, $45, KEYEVENTF_EXTENDEDKEY or 0, 0);
+    keybd_event(VK_CAPITAL, $45, KEYEVENTF_EXTENDEDKEY or KEYEVENTF_KEYUP, 0);
+  end;
+end;
+
+
+end.

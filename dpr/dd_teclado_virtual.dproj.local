@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008/09/16 16:11:20.532.pas,C:\Documents and Settings\carlos\Meus documentos\Borland Studio Projects\Unit2.pas=C:\delphi\SM_desenv\sm_desenv\smKeyboard\uniSmKeyboard.pas</Transaction>
+    <Transaction>2008/09/16 16:11:20.532.dfm,C:\Documents and Settings\carlos\Meus documentos\Borland Studio Projects\Unit2.dfm=C:\delphi\SM_desenv\sm_desenv\smKeyboard\uniSmKeyboard.dfm</Transaction>
+    <Transaction>2008/09/16 16:11:35.516.bdsproj,C:\Documents and Settings\carlos\Meus documentos\Borland Studio Projects\Project2.bdsproj=C:\delphi\SM_desenv\sm_desenv\smKeyboard\smKeyBoard.bdsproj</Transaction>
+    <Transaction>2012/06/05 14:23:53.609.dproj,F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard old\smKeyBoard.dproj=F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard\dpr\dd_teclado_virtual.dproj</Transaction>
+    <Transaction>2012/06/05 14:25:38.046.pas,F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard old\uniSmKeyboard.pas=F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard\pas\uni_DDTecladoVirtual.pas</Transaction>
+    <Transaction>2012/06/05 14:25:38.046.dfm,F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard old\uniSmKeyboard.dfm=F:\desktop\projetos_delphi\dicas_delphi\ddkeyboard\pas\uni_DDTecladoVirtual.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
